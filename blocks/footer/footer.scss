@@ -1,0 +1,33 @@
+@import "../../css/source/utilities/variables";
+
+.footer {
+  background-color: $navy;
+  padding: 60px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  ul {
+    display: flex;
+  }
+  li {
+    margin: 0 15px 15px;
+  }
+  a {
+    color: $white;
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
+}
+
+.footer-logo {
+  img {
+    width: 100%;
+    max-width: 290px;
+    display: block;
+    margin: 0 auto;
+  }
+}

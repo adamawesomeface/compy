@@ -1,0 +1,43 @@
+@import "../../../css/source/utilities/variables";
+$searchBtnBackground:  rgba(2, 70, 89,1);
+$searchBtnColor: #fff;
+
+.search-form {
+  margin-bottom: 20px;
+  border: 1px solid rgba(0,0,0,0.5);
+  padding: 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  transition: $transition;
+  &:hover {
+    border-color: rgba(0,0,0,0.3);
+    transition: $transition;
+  }
+  input {
+    padding: 8px;
+    font-size: .8rem;
+    outline: none;
+    border: none;
+    width: 6%;
+    margin: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  button.search-submit {
+    width: 30%;
+    font-size: .8rem;
+    text-align: center;
+    margin: 0;
+    background: $searchBtnBackground;
+    color: $searchBtnColor;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: $transition;
+    &:hover {
+      background: darken($searchBtnBackground, 10);
+      cursor: pointer;
+      transition: $transition;
+    }
+  }
+}

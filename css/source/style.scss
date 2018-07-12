@@ -1,0 +1,37 @@
+/***********************************
+*   BASE STYLES
+************************************/
+@import 'utilities/_all';
+@import 'base/_all';
+
+/***********************************
+*   CORE COMPONENTS
+************************************/
+// 404
+@import '../../../blocks/404/not-found/not-found';
+// Blog
+@import '../../../blocks/blog/blog-list-header/blog-list-header';
+@import '../../../blocks/blog/blog-list-post/blog-list-post';
+// Pagination
+@import '../../../blocks/pagination/pagination';
+// Footer
+@import '../../../blocks/footer/footer';
+// Header
+@import '../../../blocks/header/header';
+@import '../../../blocks/navigation/navigation';
+@import '../../../blocks/inner-header/inner-header';
+// Sidebars
+@import '../../../blocks/sidebars/blog-sidebar/blog-sidebar';
+// Search Form
+@import '../../../blocks/search/search-form/search-form';
+// Gravity Forms
+@import '../../../blocks/forms/forms';
+// Search Results
+@import '../../../blocks/search/search-results/search-result-header/search-result-header';
+@import '../../../blocks/search/search-results/search-result-list/search-result-list';
+@import '../../../blocks/search/search-results/search-no-results/search-no-results';
+
+/***********************************
+*   CUSTOM COMPONETS BELOW
+************************************/
+@import 'vendor/_all';

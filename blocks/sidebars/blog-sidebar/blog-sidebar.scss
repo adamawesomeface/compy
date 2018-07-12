@@ -1,0 +1,10 @@
+.categories {
+  ul {
+    padding-left: 16px;
+    .cat-item  {
+        list-style: disc;
+        margin-left: 8px;
+        text-transform: capitalize;
+    }
+  }
+}

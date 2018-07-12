@@ -1,0 +1,99 @@
+$btn-font-size: 1rem;
+$btn-padding: 10px 30px;
+$btn-radius: 0px;
+$btn-border: none;
+$btn-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.05);
+$btn-font: sans-serif;
+$btn-transition: .05s;
+// BUTTON ICON 
+$btn-icon: "\f0f4";
+//PRIMARY BUTTON COLORS
+$btn-bg-color-primary: rgb(6, 57, 71);
+$btn-text-color-primary: white;
+$btn-hover-bg-color-primary: rgb(23, 146, 203);
+$btn-text-hover-color-primary: white;
+//SECONDARY BUTTON COLORS
+$btn-bg-color-secondary: rgb(248, 66, 66);
+$btn-text-color-secondary: white;
+$btn-hover-bg-color-secondary: rgb(83, 228, 83);
+$btn-hover-text-color-secondary: white;
+//GHOSTED BUTTON HOVER COLORS
+$btn-text-color-ghosted: rgb(6, 57, 71);
+$btn-hover-bg-color-ghosted : rgb(23, 146, 203);
+$btn-hover-text-color-ghosted: rgb(23, 146, 203);
+//OUTLINED BUTTON OPTIONS
+$btn-text-color-outlined:rgb(6, 57, 71);
+$btn-border-color-outlined:1px solid rgb(6, 57, 71);
+$btn-hover-bg-color-outlined : rgb(23, 146, 203);
+$btn-hover-text-color-outlined: white;
+
+// RULES
+.btn {
+  outline: none;
+  box-sizing: border-box;
+  box-shadow: $btn-shadow;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: $btn-padding;
+  border-radius: $btn-radius;
+  transition: $btn-transition;
+  border: $btn-border;
+  font-family: $btn-font;
+  font-size: $btn-font-size;
+  margin-bottom: 5px;
+  cursor: pointer;
+  &.primary {
+    background: $btn-bg-color-primary;
+    color: $btn-text-color-primary;
+    &:hover {
+      background: $btn-hover-bg-color-primary;
+      color: $btn-text-hover-color-primary;
+    }
+  }
+  &.secondary {
+    background: $btn-bg-color-secondary;
+    color: $btn-text-color-secondary;
+    &:hover {
+      background: $btn-hover-bg-color-secondary;
+      color: $btn-hover-text-color-secondary;
+    }
+  }
+  &.full {
+    display: block;
+    width: 100%;
+  }
+  &.center {
+    display: table;
+    margin: 0 auto;
+  }
+  &.ghosted {
+    color:$btn-text-color-ghosted;
+    box-shadow: none;
+    &:hover{
+      //background-color: $btn-hover-bg-color-ghosted;
+      color:$btn-hover-text-color-ghosted;
+    }
+  }
+  &.outlined {
+    color:$btn-text-color-outlined;
+    border: $btn-border-color-outlined;
+    &:hover{
+      background-color: $btn-hover-bg-color-outlined;
+      color:$btn-hover-text-color-outlined;
+    }
+  }
+  &.icon{
+    &:after{
+      content:$btn-icon;
+      font-family: FontAwesome;
+      color:inherit;
+      padding-left: 10px;
+    }
+  }
+}
+
+
+.button-holder{
+  text-align: center;
+}

@@ -1,0 +1,212 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+a:active, a:focus {
+   outline:  none;
+   border: none;
+}
+*:focus {
+  outline:  none;
+}
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clear {display: inline-block;}
+
+body {
+	overflow-x: hidden;
+	width: 100%;
+}
+
+/* Hides from IE5/Mac \*/
+* html .clear {height: 1px;}
+.clear {display: block;}
+/* End hide from Mac */
+
+.clearFloats {
+  clear: both;
+  display: block;
+}
+
+/* HTML5 Support Fixes */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,canvas {
+    display:block;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+/* reset for wordpress general elements  -- Created by Core3Solutions www.core3solutions.com  */
+.alignleft    {float:left; margin-right: 20px; margin-bottom: 20px;}
+.alignright   {float:right; margin-left: 20px; margin-bottom: 20px;}
+.aligncenter  {margin: 0px auto; display:block;}
+strong,b      {font-weight: bold;}
+em,i      {font-style: italic;}
+
+/* Comment Form*/
+textarea#comment { display: block; }
+
+/* MapPress */
+.mapp-poweredby { display: none; }
+
+/* Hide Search Button Text */
+#searchsubmit span { display: none; }
+
+/*! minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css */
+// Blocks
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+// List
+ul {
+  list-style: none;
+}
+
+// Form
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+// Box sizing
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+// Media
+img,
+embed,
+object,
+audio,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+// Iframe
+iframe {
+  border: 0;
+}
+
+// Table
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-inner-content {
+  /***********************************
+  *   LIST PADDING
+  ************************************/
+  ul, ol {
+    margin-left: 1rem;
+    li {
+      margin-left: 0.6rem;
+      padding: 0.4rem 0.2rem;
+    }
+  }
+  ul {
+    list-style: disc;
+    li {
+      list-style: disc;
+    }
+  }
+  ol {
+    list-style: decimal;
+    li {
+      list-style: decimal;
+    }
+  }
+
+  /***********************************
+  *   CODE BLOCKS
+  ************************************/
+  code {
+    border: 1px dashed #ccc;
+    border-radius: 0.4rem;
+    font-family: 'Courier','arial';
+    font-size: 1rem;
+    color: $primary;
+    background: #ececec;
+    padding: 1rem;
+    margin-bottom: .8rem;
+    margin-top: .2rem;
+    display: block;
+  }
+
+  /***********************************
+  *   Address Tag
+  ************************************/
+  address {
+    display: block;
+    font-style: italic;
+    word-break: normal;
+  }
+}

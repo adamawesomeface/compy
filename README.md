@@ -1,10 +1,10 @@
 # Compy Theme
-Compy is an attempt at making a componet based theme for Wordpress.  The idea was to break everything into blocks you could compose layouts/templates from like legos.  I also like dinosaurs.
+Compy is an attempt at making a component based theme for Wordpress.  The idea was to break everything into blocks you could compose layouts/templates from like legos.  I also like dinosaurs.
 
 ## File structure
-**blocks** - this is where all of your componets will go.  Each block should have it's own folder (feel free to nest them) with their own self contained scss, javascript, and php files.   This way everything is all in one place to save you and your co-workers (or the next developer behind you) time and energy.
+**blocks** - this is where all of your component will go.  Each block should have it's own folder (feel free to nest them) with their own self contained scss, javascript, and php files.   This way everything is all in one place to save you and your co-workers (or the next developer behind you) time and energy.
 
-**css** - most of the style should live within a componet's own container folder.  We do use this folder for compiling the blocks style into a single stylesheet for loading/caching/cdning.  You could also put 'base styles' like fonts, variables, etc into the directories here.
+**css** - most of the style should live within a component's own container folder.  We do use this folder for compiling the blocks style into a single stylesheet for loading/caching/cdning.  You could also put 'base styles' like fonts, variables, etc into the directories here.
 
 **fonts** - just a nice place to include the font files your site will use.
 
